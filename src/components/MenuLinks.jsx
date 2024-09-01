@@ -8,9 +8,7 @@ function MenuLinks() {
     data: quizzes,
     isPending,
     error,
-  } = useFetch(
-    "https://json-api.uz/api/project/my-quizz"
-  );
+  } = useFetch("https://json-api.uz/api/project/my-quizz/quizzes");
   return (
     <div>
       {isPending && <p>Loading...</p>}

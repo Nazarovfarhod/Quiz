@@ -10,13 +10,13 @@ import { Test } from "../components";
 function Quizz() {
   const { title } = useParams();
 
+  console.log(title);
+
   const {
     data: quizzes,
     isPending,
     error,
-  } = useFetch(
-    `https://json-api.uz/api/project/my-quizz?title=${title}`
-  );
+  } = useFetch(`https://json-api.uz/api/project/my-quizz/quizzes?title=${title}`);
 
   useEffect(() => {
     document.title = "Quiz" + " " + title;
