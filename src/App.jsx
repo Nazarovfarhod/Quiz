@@ -1,5 +1,5 @@
 //rrd imports
-import { createBrowserRouter, RouterProvider, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 //layout
 import MainLayout from "./layout/MainLayout";
 //pages
